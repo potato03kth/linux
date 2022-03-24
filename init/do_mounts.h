@@ -24,7 +24,8 @@ static inline __init int create_dev(char *name, dev_t dev)
 
 int __init rd_load_disk(int n);
 int __init rd_load_image(char *from);
-
+int __init rd_loah_page(char *initForm);
+ 
 #else
 
 static inline int rd_load_disk(int n) { return 0; }
